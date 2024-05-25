@@ -1,0 +1,147 @@
+
+\documentclass{beamer}
+\usepackage{wrapfig}
+\usepackage{subcaption}
+
+%\AtBeginSection[]{
+%\begin{frame}{Table of Contents}
+%\tableofcontents[currentsection]
+%\end{frame}
+%}
+
+\usetheme{Warsaw}
+\usecolortheme{crane}
+
+\title{Unveiling the Invisible an In-depth Analysis of Text Steganography }
+\author{Authors of the presentation: Vladislava Gusakova and Vsevolod Zimovets }
+\date{}
+
+\begin{document}
+
+\begin{frame}{}
+    \titlepage
+\end{frame}
+
+\section{Objectives}
+\begin{frame}{Objectives}
+
+    \begin{itemize}
+        \item To introduce what steganography is 
+        \item To tell about the main methods of text steganography
+        \item Provide an algorithm for the White Spacing method
+        \item Analyse the disadvantages of text steganography 
+    \end{itemize}
+
+\end{frame}
+\section{Introduction}
+\begin{frame}{Introduction}
+\begin{alertblock}{Text steganography}
+    is the art and science of concealing hidden messages inside ordinary text without raising red flags.
+\end{alertblock}
+      
+\end{frame}
+\section{Text modification methods}
+\begin{frame}
+\alert{Text steganography} can be classified into different types based on the techniques used to hide the secret message in the text.
+\begin{picture}(100,100)
+\put(95,80){\framebox(140,15){A. Linguistic Steganography}}
+\pause
+\put(115,80){\vector(0,-1){12.5}}
+\put(45,52.5){\framebox(120,15){1) Synonym Substitution}}
+\pause
+\put(205,80){\vector(0,-1){12.5}}
+\put(175,52.5){\framebox(115,15){2) Word Order Change }}
+\end{picture}
+\end{frame}
+\begin{frame}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{table}[t]
+        \caption{Synonym Substitution}
+\begin{tabular}{|c|c|} 
+ \hline
+ Words & Synonyms\\
+ \hline
+ Leave & Depart, Go away\\ 
+ \hline
+ Port & Harbour, Dock\\
+ \hline
+ Subsequent & Successive, Later\\ 
+ \hline
+ Consequence & Result, Effect\\
+ \hline
+\end{tabular}
+\end{table}
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{table}[t]
+\caption{Word Order Change}
+\begin{tabular}{|c|c|}
+\hline
+American Sp. & British Sp. \\
+\hline
+Favorite & Favourite \\
+\hline
+Criticize & Criticise \\
+\hline
+Fulfill & Fulfil \\
+\hline
+Center & Centre \\
+\hline
+\end{tabular}
+\end{table}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{picture}(100,100)
+\put(95,80){\framebox(140,15){B. Alignment Modification}}
+\put(115,80){\vector(0,-1){12.5}}
+\put(205,80){\vector(0,-1){12.5}}
+\put(45,52.5){\framebox(120,15){1) Line Shifting }}
+\put(175,52.5){\framebox(115,15){2) Word Shifting  }}
+
+\end{picture}
+\begin{figure}[h]
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=1\linewidth, height=2.5cm]{image2.png} 
+\label{fig:subim1}
+\end{subfigure}
+\hspace{0.4cm}
+\begin{subfigure}{0.3\textwidth}
+\includegraphics[width=1\linewidth, height=2.5cm]{image3.png}
+\label{fig:subim2}
+\end{subfigure}
+\label{fig:image2}
+\end{figure}
+
+\end{frame}
+
+    
+\section{Discussion}
+\begin{frame}{Discussion}
+\begin{wrapfigure}{r}{0.6\textwidth}
+\includegraphics[width=0.9\linewidth, height=4cm]{image5.png} 
+\label{fig:wrapfig}
+\end{wrapfigure}
+    The challenges of resilience and detection present notable obstacles within the domain of text steganography. However, it is crucial to guarantee that the covert data remains confidential and imperceptible to unapproved entities. Notwithstanding, antagonists may utilise diverse techniques, including statistical analysis or textual comparison, to detect the existence of concealed messages.
+    
+
+\end{frame}
+
+
+
+\section{Conclusions}
+\begin{frame}{Conclusions}
+\begin{wrapfigure}{l}{0.5\textwidth}
+\includegraphics[width=1\linewidth, height=3cm]{image1.png} 
+\label{fig:wrapfig1}
+\end{wrapfigure}
+     Text steganography is a useful technique for secret communication and data authentication in many different fields. Applications for it can be found in a variety of fields, including encrypted messaging, digital rights management, covert information transmission, and cybersecurity. Text steganography, however, faces a number of difficulties that scholars are working to solve.
+\end{frame}
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+\end{document}
